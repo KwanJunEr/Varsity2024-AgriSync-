@@ -1,5 +1,7 @@
 # Varsity2024-AgriSync-
 
+Programming Langauge Used : HTML,CSS and Javascript
+
 AgriSync is a revolutionary platform designed to empower farmers and revolutionize agricultural practices. In a world where food security is a growing concern, AgriSync steps in to bridge the gap between traditional farming methods and modern technological advancements. Our team, comprised of four dynamic individuals, is dedicated to creating a solution that not only addresses the pressing issues facing the agricultural industry but also fosters a community of collaboration and innovation.
 
 Our journey begins with a focus on greens and crops management, a critical aspect of agriculture that directly impacts food security. In alignment with the national agenda highlighted in Budget 2024, AgriSync aims to enhance agricultural efficiency, promote self-sufficiency among farmers, and contribute to the transformation of the agricultural sector into a progressive industry.
