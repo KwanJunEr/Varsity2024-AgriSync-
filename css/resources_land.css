@@ -1,0 +1,120 @@
+
+.top-bar-search{
+    margin-left: 25px;
+    padding: calc(40px + 60px) 1rem 1rem;
+    margin-bottom:15px;
+}
+
+.top-bar-search h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.top-bar-search h3{
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+.options{
+    margin-top:20px;
+    margin-right: 20px;
+    padding:10px;
+    width:150px;
+    border-radius: 10px;
+    background-color: #538458;
+    color:white;
+}
+
+.options:hover{
+    background-color: #A8CDAC;
+    color:black;
+}
+
+.active{
+    background-color:#A8CDAC ;
+    color:black;
+}
+
+hr{
+    margin-top: 10px;
+    width:97%;
+    margin: 0 auto;
+}
+
+.container1{
+    margin-left: 25px;
+    display:grid;
+    grid-template-columns: 15% 82% ;
+    gap:20px;
+    margin-top: 20px;
+}
+
+.container1 .filterbox{
+    background-color: #A8CDAC;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    line-height: 1.5;
+}
+
+.container1 .mainbar{
+    padding:20px;
+  
+}
+
+.container1 .mainbar .land{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.container1 .mainbar .land img{
+    width:300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+select{
+    width:80%;
+    margin-bottom:10px;
+    
+
+}
+
+.filterbox H3{
+    margin-bottom: 15x;
+}
+
+.filterbox hr{
+
+    margin-top: 40x;
+}
+
+.land-item h4{
+    margin-top:10px;
+}
+
+.searchrecommend{
+    padding:20px;
+    margin-left:43px
+}
+
+.searchrecommend input{
+
+    padding:10px;
+    width: 800px;
+    border-radius: 20px;
+}
+
+.searchrecommend button{
+    margin-left:50px;
+    padding:10px;
+    width:200px;
+    background-color: black;
+    color:white;
+}

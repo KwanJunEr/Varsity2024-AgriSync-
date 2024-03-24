@@ -1,0 +1,135 @@
+/* Knowledge base  */
+
+.kb-header {
+  padding: calc(40px + 60px) 1rem 1rem;
+}
+.title {
+  font-size: 40px;
+  color: #4B714F;
+  padding-left: 50px;
+}
+
+.kb {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 155px;
+    margin-right: 96px;
+    height: 550px;
+    text-align: center;
+  }
+  
+  .kb h1 {
+    font-weight: 700;
+    font-size: 70px;
+    color: #fff;
+  }
+  
+  .kb .kb-items li {
+    float: left;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: 135px;
+    height: 200px;
+    width: 350px;
+    background-color: rgba(240, 240, 240, 0.763);
+    color: #fff;
+    transition: all 0.2s linear;
+    border-radius: 5%;
+    cursor: pointer;
+  }
+  
+  .kb .kb-items li:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+  
+  .kb .kb-items li i {
+    display: block;
+    height: 60px;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 60px;
+    cursor: default;
+  }
+  
+  .kb .kb-items li:last-child i {
+    position: relative;
+    top: -10px;
+  }
+  
+  .kb .kb-items li h4 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 75px;
+    word-wrap: break-word;
+    line-height: 35px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B714F;
+    cursor: default;
+  }
+  
+  .kb .kb-items li span {
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 25px;
+    font-size: 22px;
+    color: #fff;
+    cursor: default;
+  }
+  
+  .kb .kb-items li .inform span sup {
+    position: relative;
+    top: 2px;
+  }
+  
+
+  .kb .kb-items li img {
+    margin-top: 25px;
+    
+  }
+
+.kb-search-container {
+  position: relative;
+  margin-top: 20px;
+  width: 800px; 
+  height: 51px;
+  border-radius: 20px; 
+  overflow: hidden; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  transform: scale(1);
+	transition: transform 0.3s ease;
+  margin-left: 50px;
+}
+
+.kb-search-container:hover{
+	transform: scale(1.01);
+}
+
+.kb-search-input {
+  width: calc(100% - 40px); 
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px; 
+  box-sizing: border-box;
+  margin-left: 10px;
+  font-size: 20px;
+  
+}
+
+.kb-search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  color: #aaa; 
+  cursor: pointer; 
+  font-size: 25px;
+}
+
+
+

@@ -1,0 +1,227 @@
+/* Farm Manage  */
+.manage-header .manage-header-box {
+    padding: calc(30px + 50px) 1rem 1rem;
+}
+
+.manage-header .title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 40px;
+    color: #4B714F;
+}
+
+
+.description {
+    padding-left: 30px;
+    color: #4B714F;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+
+.mf .mf-title h1 {
+    padding-left: 45px;
+    padding-bottom: 10px;
+    color: #4B714F;
+    font-size: 30px;
+}
+
+.mf-cropstitle h1 {
+    padding-left: 45px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #4B714F;
+    font-size: 30px;
+}
+
+/* Farm Planning */
+.plan-button-container {
+    position: absolute;
+    top: 216px;
+    right: 280px; /* Adjust the distance from the right side */
+    transform: translateY(-50%);
+}
+.plan-button {
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #DAFCCF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.mf-planning li {
+    position: relative;
+    border-radius: 10px;
+    margin-right: 75px;
+    height: 300px;
+    width: 280px;
+    background-color: #CFD8CF;
+    border: 1px solid #CFD8CF;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    margin-left: 45px;
+    display: inline-block;
+}
+
+.mf-planning li:hover {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.mf-planning-img img {
+    width: 260px;
+    margin-top: 5px;
+    margin-left: 8.25px;
+    height: auto;
+    border-radius: 5%
+}
+
+.mf-planning-description {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.mf-planning-description h4 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.mf-planning-description span {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.mf-planning-farmericon {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mf-planning-farmericon img {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.mf-planning-farmericon span {
+    margin-left: 5px;
+    margin-top: 5px;
+    color: black;
+}
+
+/* Crops Manage */
+.crops-button-container {
+    position: absolute;
+    top: 600px;
+    right: 280px; /* Adjust the distance from the right side */
+    transform: translateY(-50%);
+}
+.crops-button {
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #DAFCCF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+.mf-cropsmanage li {
+    margin-left: 45px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    width: 280px;
+    background-color: #CFD8CF;
+    border: 1px solid #CFD8CF;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.mf-cropsmanage li:hover {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.mf-cropsmanage-img img {
+    width: 260px;
+    margin-top: 5px;
+    margin-left: 8.25px;
+    height: auto;
+    border-radius: 5%
+}
+
+.mf-cropsmanage-description {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.mf-cropsmanage-description h4 {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.mf-cropsmanage-description span {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.mf-cropsmanage-farmericon {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mf-cropsmanage-farmericon img {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.mf-cropsmanage-farmericon span {
+    margin-left: 5px;
+    color: black;
+    margin-top: 5px;
+}
+/* Harvest */
+.harvest-button-container {
+    position: absolute;
+    top: 980px;
+    right: 280px; /* Adjust the distance from the right side */
+    transform: translateY(-50%);
+}
+.harvest-button {
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #DAFCCF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+/* Sustainability */
+.sustain-button-container {
+    position: absolute;
+    top: 1365px;
+    right: 280px; /* Adjust the distance from the right side */
+    transform: translateY(-50%);
+}
+.sustain-button {
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #DAFCCF;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+

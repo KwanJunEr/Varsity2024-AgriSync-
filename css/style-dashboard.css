@@ -1,0 +1,1174 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 54px;
+    color: #222
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(255, 253, 250); 
+}
+
+
+/* Nav Bar */
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #46655E;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .navbar li {
+    display: block;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(32, 24, 31);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Header Start */
+#header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #46655E;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  width: 100%;
+}
+
+#header img {
+  width: 140px;
+}
+
+.cta button{
+  font-weight:600;
+  padding:10px 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color:black;
+}
+
+button:hover{
+  background-color: rgb(32, 24, 31);
+  color: white;
+}
+
+.Calculate {
+  font-weight:600;
+  padding:15px 40px;
+  background-color: #46655E;
+  border-radius: 50px;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color:rgb(255, 255, 255);
+  /* margin-top: 10px; */
+  margin-bottom: 16px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 87px; 
+  left: 0;
+  bottom: 0;
+  width: 108px;
+  height: calc(100vh - 60px);
+  padding: 28px 1.7rem;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: lightgray;
+  z-index: 999;
+}
+
+.the-real-body {
+  /* position: relative; */
+  top: 87px; 
+  height: calc(100vh - 60px);
+  left: 0;
+  bottom: 0;
+  /* width: 108px; */
+
+  padding: 28px 0 0 0;
+  /* color: #fff; */
+  /* overflow: hidden; */
+  transition: all 0.5s linear;
+  /* background: lightgray; */
+  /* z-index: 999;  */
+}
+
+.sidebar:hover {
+  width: 310px;
+  transition: 0.3s;
+}
+
+/* .main span, .main i {
+  color: #222;
+} */
+
+.main {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.main li {
+  padding: 1rem;
+  margin: 28px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main li:hover, .active {
+  background: #2b2b2b58;
+}
+
+.main a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main a span {
+  overflow: hidden;
+}
+
+.main a i{
+  font-size: 1.2rem;
+}
+
+.main li span {
+  display: none;
+}
+
+.sidebar:hover .main li span {
+  display: inline-block;
+  text-wrap: nowrap;
+}
+
+/* .sidebar:hover .main li a i {
+  margin-right: 10px;
+} */
+
+.main--content {
+  position: relative;
+  background: #ebe9e9;
+  width: calc(100% - 108px); 
+  margin-left: 108px; 
+  padding: calc(20px + 60px) 1rem 1rem;
+  transition: margin-left 0.3s;
+}
+
+.sidebar:hover ~ .main--content {
+  margin-left: 310px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+
+.header--wrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.header--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+}
+
+.header--title {
+  color: #4a4a4a;
+  font-weight: 600;
+  padding-top: 17px;
+}
+
+.search--box {
+  background: rgb(237, 237, 237) ;
+  border-radius: 40px;
+  color: rgba(113, 99, 186, 255);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 22px;
+}
+
+.search--box input{
+  background: transparent;
+  padding: 10px;
+  border: transparent;
+}
+
+.search--box i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  color: #8f8f8f;
+}
+
+.search--box i:hover {
+  transform: scale(1.2);
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  gap: 35px;
+  padding: 13px 0;
+}
+
+
+.weather-data {
+  width: 100%;
+}
+
+.current-weather {
+  color: #fff;
+  display: flex;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  background: #add0cc;
+  justify-content: space-between;
+  width: 290px;
+} 
+
+.current-weather h2 {
+  font-size: 1.2rem;
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+
+.weather {
+  font-size: 1.9rem;
+  margin-top: -10px;
+  margin-bottom: -20px;
+}
+
+.weather-data h4 {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: 90px;
+  margin-right: -40px;
+}
+
+.current-weather .icon h4 {
+  margin-top: -10px;
+  text-transform: capitalize;
+  margin-right: -30px;
+}
+
+.crop-req-calc {
+  margin-top: 20px;
+}
+
+.column-section2 :where(input, .select-box) {
+  margin-top: 16px;
+}
+
+.select-box select {
+  /* height: 60%; */
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.select-box2 select {
+  /* height: 60%; */
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.column-section2 :where(.select-box) {
+  position: relative;
+  /* height: 40px;
+  width: 100%; */
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.section-06 :where(.select-box) {
+  position: relative;
+  height: 40px;
+  width: 600px; 
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 25px;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.section-06 :where(.select-box2) {
+  position: relative;
+  height: 40px;
+  width: 300px; 
+  outline: none;
+  font-size: 1rem;
+  /* color: #707070; */
+  margin-top: 25px;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.column .elevation,  .column .lattitude {
+  display: flex;
+  flex-direction: column;
+}
+
+.elevation #quantity {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.lattitude #quantity {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: transparent;
+  border-radius: 6px;
+  width: 150px;
+}
+
+.column .elevation {
+  margin-right: 30px; /* Adjust the value as needed */
+}
+
+.column .latitude {
+  margin-left: 30px; /* Adjust the value as needed */
+}
+
+.duration {
+  margin-left: 30px;
+}
+
+
+
+/* .select-box {
+  margin-top: 20px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+} */
+
+/* .days-forecast {
+  margin-top: -22px;
+} */
+
+/* .days-forecast h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  margin-bottom: -3px;
+} */
+
+.weather-cards {
+  display: flex;
+  gap: 10px;
+}
+
+.weather-cards .card {
+  list-style: none;
+  color: #4d6d8b;
+  padding: 18px 16px;
+  border-radius: 5px;
+  background: #cdd9e4;
+  width: calc(100% / 5);
+}
+
+.weather-cards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
+
+@media (max-width: 1400px) {
+  .weather-cards {
+    flex-wrap: wrap;
+  }
+
+  .weather-cards .card {
+    width: calc(100% /4 - 15px);
+  }
+}
+
+@media (max-width: 950px) {
+  .weather-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 750px) {
+  .weather-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.weather-container .column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+.area-chart {
+  width: 50%;
+  /*  max-width: 100%; */
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.chart {
+  width: 630px;
+  height: 630px;
+  /*  max-width: 100%; */
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+#top_x_div {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+#chart_div {
+  width: 100%;
+  height: 400px; 
+}
+
+.content-table #chart_div2 {
+  width: 20%;
+  height: 400px; 
+}
+
+.column {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  column-gap: 25px;
+  margin-top: 20px;
+}
+
+.column-section2 {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 25px;
+  margin-top: 10px;
+}
+
+
+.crop-req-calc .result {
+  border: 1px solid #cccccc;
+  padding: 27px;
+  width: 100%;
+  border-radius: 6px;
+  color: #222;
+  
+}
+
+.section-3 h2{
+  margin: 20px 0;
+}
+
+.section-4 h2{
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.section5 h2{
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.content-table {
+  border-collapse: collapse;
+  /* margin: 25px 0; */
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(118, 18, 18, 0.1);
+  margin-left: -27px ;
+}
+
+.content-table thead tr {
+  background-color: #222;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th, .content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #222;
+}
+
+/* .content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+} */
+
+
+.column-section3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+#chart_div2 {
+  width: 50%;
+  /*  max-width: 100%; */
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* .table-column {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.chart-column {
+  flex: 1;
+} */
+
+.insights {
+  display: flex;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 40px;
+  /* width: 55%; */
+  /* height: 19%; */
+  flex-wrap: wrap;
+}
+
+.insights>div {
+  background-color: rgb(207, 219, 207);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease;
+}
+
+.column-sec4 .soilhealth {
+  padding: 10px;
+}
+
+.column-sec4{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  margin-top: -30px;
+}
+
+.column-sec5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+}
+
+.column-sec6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 405px;
+}
+
+.insights .date {
+  padding: 20px 0 0 0;
+}
+
+.insights h1 {
+  padding: 20px 0;
+  color: rgb(15, 115, 85);
+}
+
+.insights h4 {
+  color: rgb(15, 115, 85);
+}
+
+.soil-temp, .soil-humid, .soil-conductivity, .soil-ph {
+  padding: 20px;
+  width: 250px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  /* padding: 20px; */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 20px; */
+  margin-top: 10px;
+}
+
+.column-crop-m {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 25px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.details .recentSchedule {
+  position: relative;
+  display: grid;
+  min-height: 350px;
+  background: white;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.details .cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardHeader h2 {
+  font-weight: 600;
+  color: black;
+  padding: 20px;
+  margin-bottom: -20px;
+  margin-top: -5px;
+}
+
+.cardHeader .btn {
+  position: relative;
+  padding: 0 5px;
+  background: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+}
+
+/* .pes-sched{
+  padding: 0 100px;
+  margin-bottom: 40px;
+} */
+
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.details table thead td {
+  font-weight: 600;
+}
+
+.details .recentSchedule table tr {
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentSchedule table table tr:last-child {
+  border-bottom: none;
+}
+
+.details .recentSchedule table tbody tr:hover {
+  background: rgb(111, 153, 130);
+}
+
+.details .recentSchedule table tr td {
+  padding: 20px;
+}
+
+.details .recentSchedule table tr td:last-child {
+  text-align:  end;
+}
+
+.details .recentSchedule table tr td:nth-chile(2) {
+  text-align: end;
+}
+
+.details .recentSchedule table tr td:nth-chile(3) {
+  text-align: center;
+}
+
+.status.completed {
+  padding: 4px 6px;
+  background: #70a679;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.pending {
+  padding: 4px 6px;
+  background: #868686;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#regions_div, #chart_lines, #chart_div3 {
+  margin-left: 10px;
+}
+
+.map {
+  border-radius: 10px;
+  background-color: white;
+  width: 620px;
+  margin-bottom: 10px;
+}
+
+.moisture, .croplevel {
+  border-radius: 10px;
+  background-color: white;
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.moisture h4, .croplevel h4 {
+  margin: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.moisture p, .croplevel p {
+  margin: 10px;
+  padding-left: 20px;
+  /* padding-top: 20px; */
+  font-size: 10px;
+}
+
+#chart_div3 {
+  margin-top: 55px;
+}
+
+.column-iot {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 45px;
+  margin-top: 10px;
+}
+
+.fourinone {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.column-iot2 {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 75px;
+  margin-top: 10px;
+}
+
+.column-iot-special {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  column-gap: 14px;
+  margin-top: 10px;
+}
+
+.column-iot p {
+  margin: 10px -4px 0 0;
+  line-height: 1.5;
+  width: 410px; 
+  font-size: 13px;
+}
+
+.column-iot-special p {
+  margin: 10px -4px 0 0;
+  line-height: 1.5;
+  width: 440px; 
+  font-size: 13px;
+}
+
+.iot-info h3 {
+  margin-bottom: 20px;
+}
+
+.column-iot b {
+  display: inline-block;
+  
+  font-weight: bold;
+}
+
+.iot-info .column-iot {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.iot-info .column-iot:last-child {
+  margin-right: 0;
+}
+
+.iot-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.insights h4 {
+  margin-top: 10px;
+}
+
+.column-seclast .insights .soilhealth {
+  background-color: #cecece;
+}
+
+.column-seclast .insights .soilhealth1 {
+  background-color: #ea0000;
+}
+
+.column-seclast .insights .soilhealth  h4{
+  color: #282828;
+}
+
+.column-seclast .insights .soilhealth1  h4{
+  color: white;
+}
+
+.column-seclast .insights .soilhealth  .disease{
+  color: #a00000;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+.toast {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 500px;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 80px; 
+  right: 20px;
+  width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+.popup h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.popup p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.popup-circle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+.popup-circle i {
+  color: white;
+  font-size: 24px;
+}
+
+.popup input {
+  position: relative;
+  height: 50px;
+  width: 75%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  margin-bottom: 23px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.popup button{
+  font-weight:600;
+  padding:10px 30px;
+  margin-left: 20px;
+  background-color: black;
+  border-radius: 50px;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color:white;
+}
+
+.popup li {
+  margin-left: 10px; 
+  margin-bottom: 5px; 
+  font-size: 14px;
+}
+
+.chatbox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 9999;
+}
+.chatbox-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.chatbox-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.chatbox-body {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.chatbox-input {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.chatbox-input input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+.chatbox-input button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.chatbox-input button:hover {
+  background-color: #0056b3;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.close {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}

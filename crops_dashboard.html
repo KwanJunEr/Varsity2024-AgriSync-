@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriSync</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+        <div>
+          <ul class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">MyFarm
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="farmplanning-onboarding.html">Farm Planning</a>
+                <a href="index.html">Farm Manage</a>
+                <a href="farm_harvest.html">Farm Harvest</a>
+                <a href="farm_sustainability.html">Farm Sustainability</a>
+              </div>
+            </div>
+            <li> <a href="resources_land.html">Resources</a></li>
+            <!-- <div class="dropdown">
+                          <button class="dropbtn">Opportunity
+                              <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                              <a href="#">Subsidies</a>
+                          </div>
+                      </div> -->
+            <li> <a href="subsidy.html">Opportunities</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Connect
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="event.html">Events</a>
+                <a href="community.html">Community</a>
+                <a href="mentorship.html">Mentorship</a>
+              </div>
+            </div>
+            <li> <a href="tools.html">Tools</a></li>
+            <li> <a href="knowledge_base.html">Knowledge</a></li>
+            <!-- <li><a href="page6.html"><i class="far fa-shopping-bag"></i></a></li>         -->
+          </ul>
+        </div>
+        <a class="cta" href="#"><button>Profile</button></a>
+      </section>
+
+    <section class="the-real-body">
+        <div class="sidebar">
+            <ul class="main">
+                <li class="active">
+                    <a href="#A">
+                        <i class="fa-solid fa-sun"></i>
+                        <span>Weather</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#B">
+                        <i class="fa-solid fa-droplet"></i>
+                        <span>Water Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#C">
+                        <i class="fa-solid fa-sack-xmark"></i>
+                        <span>Fertilizer Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#D">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <span>Soil Health</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#E">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                        <span>Pesticide Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#F">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                        <span>Crop Monitoring</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="header--title">
+                    <span>MyFarm</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user--info">
+                    <div class="search--box">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="weather-container">
+                <div class="weather-data" id="A">
+                    <h2 class="weather">Weather</h2>
+                    <div class="column">
+                        <div class="current-weather">
+                            <div class="details">
+                                <h2>Malaysia (2024-03-22)</h2>
+                                <h4>Temperature: 19.10°C</h4>
+                                <h4>Wind: 4.31 M/S</h4>
+                                <h4>Humidity: 79%</h4>
+                            </div>
+                            <div class="icon">
+                                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                <h4>Moderate Rain</h4>
+                            </div>
+                        </div>
+                        <div class="days-forecast">
+                            <h2>5-Day Forecast</h2>
+                            <ul class="weather-cards">
+                                <li class="card">
+                                    <h3>_____</h3>
+                                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                    <h4>Temperature: ____°C</h4>
+                                    <h4>Wind: ____ M/S</h4>
+                                    <h4>Humidity: ___%</h4>
+                                </li>
+                                <li class="card">
+                                    <h3>_____</h3>
+                                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                    <h4>Temperature: ____°C</h4>
+                                    <h4>Wind: ____ M/S</h4>
+                                    <h4>Humidity: ___%</h4>
+                                </li>
+                                <li class="card">
+                                    <h3>_____</h3>
+                                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                    <h4>Temperature: ____°C</h4>
+                                    <h4>Wind: ____ M/S</h4>
+                                    <h4>Humidity: ___%</h4>
+                                </li>
+                                <li class="card">
+                                    <h3>_____</h3>
+                                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                    <h4>Temperature: ____°C</h4>
+                                    <h4>Wind: ____ M/S</h4>
+                                    <h4>Humidity: ___%</h4>
+                                </li>
+                                <li class="card">
+                                    <h3>_____</h3>
+                                    <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+                                    <h4>Temperature: ____°C</h4>
+                                    <h4>Wind: ____ M/S</h4>
+                                    <h4>Humidity: ___%</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <h2 id="B">Water Management</h2>
+            <div class="column-section2">
+                <div class="area-chart">
+                    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+                </div>
+                <div class="crop-req-calc">
+                    <h2>Crop Water Requirement Calculator</h2>
+                    <div class="column">
+                        <div class="crop">
+                            <label>Crop: </label>
+                            <div class="select-box">
+                                <select>
+                                    <option>Type</option>
+                                    <option>Grains</option>
+                                    <option>Pulses</option>
+                                    <option>Oilseeds</option>
+                                    <option>Fruits</option>
+                                    <option>Vegetables</option>
+                                    <option>Tubers and Root</option>
+                                    <option>Nuts</option>
+                                    <option>Spices and Herbs</option>
+                                    <option>Beverages</option>
+                                    <option>Sugars</option>
+                                    <option>Fiber</option>
+                                    <option>Forage and Fodder</option>
+                                    <option>Specialty</option>
+                                    <option>Medicinal and Aromatic Plants</option>
+                                </select>
+                                <!-- <input type="text" placeholder="City" required/> -->
+                            </div>
+                        </div>
+    
+                        <div class="direction">
+                            <label>Direction: </label>
+                            <div class="select-box">
+                                <select>
+                                    <option>Direction</option>
+                                    <option>Northen</option>
+                                    <option>Western</option>
+                                    <option>Southern</option>
+                                    <option>Eastern</option>
+                                    <option>Northeast</option>
+                                    <option>Northwest</option>
+                                    <option>Southeast</option>
+                                    <option>Southwest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <div class="elevation">
+                            <label>Elevation: </label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="2000" placeholder="Elevation">
+                        </div>
+    
+                        <div class="lattitude">
+                            <label>Lattitude: </label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="2000" placeholder="Lattitude">
+                        </div>
+    
+                        <div class="duration">
+                            <div class="options">
+                                <div class="day">
+                                    <input type="radio" id="check-day" name="option"/>
+                                    <label for="check-day">Per mm/day</label>
+                                </div>
+                                <div class="month">
+                                    <input type="radio" id="check-month" name="option"/>
+                                    <label for="check-month">Per mm/month</label>
+                                </div>
+                                <div class="season">
+                                    <input type="radio" id="check-season" name="option"/>
+                                    <label for="check-season">Per mm/season</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="Calculate">Calculate ETc</button>
+                    <br>
+                    <textarea class="result" name="Result" id="" cols="30" rows="6" placeholder="Result"></textarea>
+                </div>
+            </div>
+    
+            <div class="section-3" id="C">
+                <h2>Fertilizer Management</h2>
+                
+                <div class="column-section3">
+                    <table class="content-table" border="1px" style="text-align: center;">
+                        <div class="tablecontent">
+                            <thead>
+                                <tr style="text-align: center;">
+                                    <td rowspan="2">Age in Years</td>
+                                    <td colspan="3">Nutrients g/tree</td>
+                                    <td colspan="3">Fertilizer g/tree</td>                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>-</td>
+                                    <td>Nitrogen</td>
+                                    <td>Phosphorus pentoxide</td>
+                                    <td>Potassium Oxide</td>
+                                    <td>Urea</td>
+                                    <td>DAP</td>
+                                    <td>MOP</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>1</td>
+                                    <td>28</td>
+                                    <td>11</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>25</td>
+                                    <td>80</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>5</td>
+                                    <td>139</td>
+                                    <td>57</td>
+                                    <td>251</td>
+                                    <td>250</td>
+                                    <td>125</td>
+                                    <td>400</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>10</td>
+                                    <td>416</td>
+                                    <td>170</td>
+                                    <td>735</td>
+                                    <td>750</td>
+                                    <td>375</td>
+                                    <td>1150</td>
+                                </tr>
+                
+                                <tr>
+                                    <td>15 & Above</td>
+                                    <td>832</td>
+                                    <td>340</td>
+                                    <td>1503</td>
+                                    <td>1500</td>
+                                    <td>750</td>
+                                    <td>2500</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </table>
+                    <div id="chart_div2" style="width: 500px; height: 400px;"></div>
+                </div>
+            </div>
+            
+            <div class="section-4" id="D">
+                <h2>Soil Health</h2>
+                <div class="column-sec4">
+                    <div class="insights">
+                        <div class="soilhealth">
+                            <div class="soil-temp">
+                                <i class="fa-solid fa-temperature-three-quarters"></i>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Soil Temperature</h3>
+                                        <h1>45°C</h1>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth">
+                            <div class="soil-conductivity">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Soil Conductivity</h3>
+                                        <div class="row"><h1>0.9</h1><h4><br><br>DS/M</h3></div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth">
+                            <div class="soil-humid">
+                                <i class="fa-solid fa-water"></i>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Soil Humidity</h3>
+                                        <h1>88%</h1>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth">
+                            <div class="soil-ph">
+                                <i class="fa-solid fa-temperature-empty"></i>
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Soil PH Level</h3>
+                                        <h1>10</h1>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section5" id="E">
+                <h2>Pesticide Management</h2>
+                <div class="column-sec5">
+                    <div class="chart">
+                        <div id="top_x_div" style="width: 800px; height: 600px;"></div>
+                    </div>
+                    <div class="scheduling">
+                        <div class="details">
+                            <div class="recentSchedule">
+                                <div class="cardHeader">
+                                    <h2>Pesticide Scheduling</h2>
+                                </div>
+
+                                <table class="pes-sched">
+                                    <thead>
+                                        <tr>
+                                            <td>Crops</td>
+                                            <td>Date</td>
+                                            <td>Pesticide Type</td>
+                                            <td>Status</td>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>Rice</td>
+                                            <td>March 5, 2024</td>
+                                            <td>Glyphosate</td>
+                                            <td><span class="status completed">Completed</span></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>Wheat</td>
+                                            <td>April 12, 2024</td>
+                                            <td>Pyrethroid</td>
+                                            <td><span class="status pending">Pending</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Oats</td>
+                                            <td>June 1, 2024</td>
+                                            <td>Pyrethroid</td>
+                                            <td><span class="status completed">Completed</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Wheat</td>
+                                            <td>April 12, 2024</td>
+                                            <td>Pyrethroid</td>
+                                            <td><span class="status pending">Pending</span></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>Watermelon</td>
+                                            <td>May 20, 2024</td>
+                                            <td>Neonicotinoid</td>
+                                            <td><span class="status completed">Completed</span></td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <td>Oats</td>
+                                            <td>June 8, 2024</td>
+                                            <td>Organophosphate</td>
+                                            <td><span class="status pending">Pending</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-06" id="F">
+                <br>
+                <br>
+                <div class="header--wrapper" style="background: #46655E;">
+                    <div class="header--title">
+                        <span style="color: rgb(222, 222, 222); font-weight:500; font-style:italic;">MyFarm</span>
+                        <h2 style="color: white;">Crop Monitoring</h2>
+                    </div>
+                </div>
+                <div class="column-sec6">
+                    <div class="select-box">
+                        <select>
+                            <!-- <option>Your IoT Devices</option> -->
+                            <option>Decagon Devices GS3 Soil Moisture Sensor</option>
+                            <option>FarmBot Genesis Precision Farming Robot</option>
+                            <option>John Deere S700 Series Precision Farming Combine</option>
+                            <option>SenseFly eBee X Agricultural Drone</option>
+                            <option>Parrot Flower Power Soil Sensor</option>
+                            <option>Semios Phero Dispenser</option>
+                        </select>
+                    </div>
+                    <div class="select-box2">
+                        <select>
+                            <option>Disconnect</option>
+                            <option>Connect</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="iot-info">
+                    <div class="messyinfo">
+                        
+                    </div>
+                    <h3>IoT Details</h3>
+                    <div class="column-iot">
+                        <p>
+                            <b>Model Name:</b>
+                            Decagon Devices GS3 Soil Moisture Sensor
+                        </p>
+                        <p>
+                            <b>Model Status:</b>
+                            Operating
+                        </p>
+                        <p>
+                            <b>Sector:</b>
+                            Sector 1
+                        </p>
+                    </div>
+
+                    <div class="column-iot">
+                        <p>
+                            <b>Battery Status:</b>
+                            85% remaining
+                        </p>
+                        <p>
+                            <b>Installation Date:</b>
+                            January 15, 2023
+                        </p>
+                        <p>
+                            <b>Last Data Transmission:</b>
+                            March 22, 2024 10:45 AM
+                        </p>
+                    </div>
+
+                    <div class="column-iot-special">
+                        <p>
+                            <b>Firmware Version:</b>
+                            v2.1.4
+                        </p>
+                        <p>
+                            <b>Location Coordinates:</b>
+                            Latitude: 34.0522, Longitude: -118.2437
+                        </p>
+                    </div>
+                    <br>
+                </div>
+                
+                    <div class="fourinone">
+                        <h3>Sensor Readings</h3>
+                        <div class="column-iot2">
+                            <p>
+                                <b>Soil Moisture:</b>
+                                35% (Average)
+                            </p>
+                            <p>
+                                <b>Soil Temperature:</b>
+                                15°C
+                            </p>
+                            <p>
+                                <b>Ambient Temperature:</b>
+                                20°C
+                            </p>
+                            <p>
+                                <b>Relative Humidity:</b>
+                                60%
+                            </p>
+                        </div>
+                    </div>
+                <h3>IoT Analysis</h3>
+                <div class="column-crop-m">
+                    <div class="map">
+                        <div id="regions_div" style="width: 550px; height: 500px;"></div>
+                    </div>
+                    <div class="moisture">
+                        <h4>Moisture</h4>
+                        <p>Realtime - last 10 minutes</p>
+                        <div id="chart_lines" style="width: 300px; height: 350px;"></div>
+                    </div>
+                    <div class="croplevel">
+                        <h4>Crop Performance</h4>
+                        <p>Realtime - last 5 minutes</p>
+                        <div id="chart_div3" style="width: 300px; height: 350px;"></div>
+                    </div>
+                </div>
+                <div class="column-seclast">
+                    <div class="insights">
+                        <div class="soilhealth">
+                            <div class="soil-temp">
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Sector 1</h3>
+                                        <h4>No Abnomalies</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth">
+                            <div class="soil-conductivity">
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Sector 2</h3>
+                                        <h4>No Abnomalies</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth1">
+                            <div class="soil-humid">
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Sector 3</h3>
+                                        <h4 class="disease">Disease Detected</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="soilhealth">
+                            <div class="soil-ph">
+                                <div class="middle">
+                                    <div class="left">
+                                        <h3>Sector 4</h3>
+                                        <h4>No Abnomalies</h4>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="date">2 Mar 2023, 12:00pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-circle" onclick="showRecommendationPopup()">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="popup" id="recommendationPopup">
+            <div class="top">
+                <h2>AI Recommendation</h2>
+                <span class="close" onclick="hideRecommendationPopup()">&times;</span> <!-- Close button -->
+            </div>
+            <p>Dear Farmer,</p>
+            <p>Our AI system has detected a concerning issue in Sector 3 of your farm. The soil analysis indicates the presence of a disease, which could potentially affect your crops' health and yield.</p>
+            <p>Here are some recommendations to address this issue:</p>
+            <ul>
+                <li>Isolate the affected area to prevent the spread of the disease to other parts of the farm.</li>
+                <li>Identify the specific type of disease present in the soil through further testing or consultation with agricultural experts.</li>
+                <li>Implement appropriate treatment measures, such as applying fungicides or biocontrol agents, based on the type of disease detected.</li>
+            </ul>
+            <p>For personalized assistance and further guidance, feel free to reach out to our agricultural experts or consult local extension services.</p>
+            <p>Best regards,</p>
+            <p>Your Farm AI Assistant</p>
+            
+            <input type="text" id="recommendationInput" placeholder="What questions do you have?">
+            <!-- Button to send recommendation -->
+            <button onclick="sendRecommendation()">Send</button>
+        </div>
+    </section>
+
+    <script src="../scripts/app.js"></script>
+    <script src="route.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Actual Water Usage', 'Target Water Usage'],
+          ['January',  1000,      400],
+          ['February',  1170,      460],
+          ['March',  660,       1120],
+          ['April',  1030,      540],
+          ['May',  180,      540],
+        ]);
+
+        var options = {
+          hAxis: {title: 'Month',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Rice', 'NE', 'Series 1 Open', 'Series 1 Close', 'Series 1 High', 'FFP', 'Series 2 Open', 'Series 2 Close', 'Series 2 High'],
+            ['Wheat', 20, 25, 30, 35, 15, 22, 28, 33],
+            ['Corns', 31, 35, 40, 45, 26, 31, 38, 43],
+            ['Watermelon', 45, 50, 55, 60, 40, 45, 50, 55]
+          ]);
+        
+          var options = {
+            <!-- legend: 'none', -->
+            title: 'NE vs. FFP: Nutrient Application & Yield in IGP',
+            series: {
+              0: { color: '#455f88' }, 
+              1: { color: '#782d2d' }   
+            }
+          };
+        
+          var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div2'));
+        
+          chart.draw(data, options);
+        }
+        </script>
+        <script>
+            document.querySelectorAll('.sidebar a').forEach(anchor => {
+                anchor.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = anchor.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - document.querySelector('#header').offsetHeight;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['bar']});
+            google.charts.setOnLoadCallback(drawStuff);
+      
+            function drawStuff() {
+                var data = new google.visualization.arrayToDataTable([
+                    ['Crops', 'Percentage'],
+                    ["Rice", 34],
+                    ["Wheat", 94],
+                    ["Watermelon", 61],
+                    ["Oats", 72]
+                ]);
+                
+                var options = {
+                    width: 500,
+                    height: 500,
+                    legend: { position: 'none' },
+                    chart: {
+                        title: 'Pesticide Requirement Percentage for Crops',
+
+                        subtitle: 'Analysed by IoT Device' 
+                    },
+                    series: {
+                        0: { color: '#455f88' }, // Color for Series 1
+                        1: { color: '#782d2d' }   // Color for Series 2
+                    },
+                    axes: {
+                        x: {
+                            0: { side: 'top', label: 'Percentage of Pesticide Used'} // Top x-axis.
+                        }
+                    },
+                    bar: { groupWidth: "90%" },
+                    colors: [] // Define colors based on percentage
+                };
+                
+                for (var i = 0; i < data.getNumberOfRows(); i++) {
+                    var value = data.getValue(i, 1);
+                    if (value < 30) {
+                        color: '#455f88';
+                    } else if (value < 60) { 
+                        color: '#782d2d'; 
+                    } else if (value < 70) { 
+                      color: 'orange'; 
+                    } else {
+                      options.colors.push('red'); 
+                    }
+                  }
+                
+                var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+                chart.draw(data, google.charts.Bar.convertOptions(options));
+            };
+        </script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {
+                'packages':['geochart'],
+            });
+            google.charts.setOnLoadCallback(drawRegionsMap);
+
+            function drawRegionsMap() {
+                var data = google.visualization.arrayToDataTable([
+                ['Country', 'Popularity'],
+                ['Germany', 200],
+                ['United States', 300],
+                ['Brazil', 400],
+                ['Canada', 500],
+                ['France', 600],
+                ['RU', 700]
+                ]);
+
+                var options = {};
+
+                var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+                chart.draw(data, options);
+            }
+        </script>
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'x');
+            data.addColumn('number', 'values');
+            data.addColumn({id:'i0', type:'number', role:'interval'});
+            data.addColumn({id:'i1', type:'number', role:'interval'});
+            data.addColumn({id:'i2', type:'number', role:'interval'});
+            data.addColumn({id:'i2', type:'number', role:'interval'});
+            data.addColumn({id:'i2', type:'number', role:'interval'});
+            data.addColumn({id:'i2', type:'number', role:'interval'});
+    
+            data.addRows([
+                [1, 100, 90, 80, 85, 96, 100, 20],
+                [2, 20, 95, 40, 90, 80, 90, 10],
+                [3, 20, 100, 30, 40, 60, 20, 20],
+                [4, 90, 85, 95, 85, 88, 92, 95],
+                [5, 70, 74, 63, 67, 69, 70, 72],
+                [6, 30, 39, 22, 21, 28, 34, 40],
+                [7, 80, 77, 83, 70, 77, 85, 90],
+                [8, 100, 90, 80, 85, 95, 102, 80]]);
+    
+            
+            var options_lines = {
+                vAxis: {title: 'Moisture, %',  titleTextStyle: {color: '#333'}},
+                hAxis: {title: 'Time',  titleTextStyle: {color: '#333'}},
+                curveType: 'function',
+                lineWidth: 4,
+                intervals: { 'style':'line' },
+                legend: 'none'
+            };
+    
+            var chart_lines = new google.visualization.LineChart(document.getElementById('chart_lines'));
+            chart_lines.draw(data, options_lines);
+        }
+        </script>
+
+
+        <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Year', 'Growing Phase', 'Crop Performance', 'Harvest Quantity', 'Economic'],
+            ['2020',  1000,      400, 700, 200],
+            ['2021',  1170,      460, 300, 800],
+            ['2022',  660,       1120, 230, 811],
+            ['2023',  1030,      540, 1300, 1000]
+            ]);
+
+            var options = {
+            isStacked: true,
+            height: 300,
+            legend: {position: 'top', maxLines: 3},
+            vAxis: {minValue: 0},
+            
+            hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}}
+            };
+            
+
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div3'));
+            chart.draw(data, options);
+        }
+        </script>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var diseaseElement = document.querySelector('.disease');
+                
+                if (diseaseElement) {
+                    var sectorName = diseaseElement.closest('.soilhealth1').querySelector('h3').textContent;
+                    var message = 'Alert: Disease detected in ' + sectorName;
+        
+                    createToast(message);
+                }
+            });
+        
+            function createToast(message) {
+                var toast = document.createElement('div');
+                toast.className = 'toast';
+                toast.textContent = message;
+        
+                document.body.appendChild(toast);
+        
+                setTimeout(function() {
+                    toast.style.opacity = 1;
+                }, 100);
+        
+                setTimeout(function() {
+                    toast.style.opacity = 0;
+                    setTimeout(function() {
+                        toast.remove();
+                    }, 300);
+                }, 5000); 
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script>
+            
+            function showRecommendationPopup() {
+                var popup = document.getElementById("recommendationPopup");
+                popup.style.display = "block";
+            }
+
+            function hideRecommendationPopup() {
+                var popup = document.getElementById("recommendationPopup");
+                popup.style.display = "none";
+            }
+
+            function sendMessage() {
+                var messageInput = document.getElementById("messageInput");
+                var message = messageInput.value.trim();
+                if (message !== "") {
+                    var chatboxBody = document.getElementById("chatboxBody");
+                    var messageElement = document.createElement("p");
+                    messageElement.textContent = "You: " + message;
+                    chatboxBody.appendChild(messageElement);
+                    messageInput.value = "";
+                }
+            }
+        </script>
+    </body>
+</html>

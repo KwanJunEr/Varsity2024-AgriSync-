@@ -1,0 +1,75 @@
+
+
+.top-introduction{
+    padding: calc(40px + 60px) 1rem 1rem;
+    margin-left:15px;
+}
+
+.top-introduction h2{
+    margin-bottom: 15px;
+}
+.top-introduction h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+
+.container .top-button{
+    margin-bottom: 40px;
+    margin-left:15px;
+
+}
+.container .top-button button{
+    background-color: #A8CDAC;
+    border-radius: 5px;
+    width:150px;
+    height:30px;   
+    border: 0.3pt;
+    margin-right: 20px;
+    font-weight:700;
+    margin-left: 20px;
+}
+
+.events{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px;
+    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+
+}
+
+.container .top-button button:hover{
+    background-color: #538458;
+}
+
+.events .events_list{
+    background-color: whitesmoke;
+    width:350px;
+    text-align: center;
+    padding:30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.events .events_list button{
+    
+    margin-top: 15px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #A8CDAC;
+}
+
+.events .events_list img{
+    margin-bottom: 10px;
+}
+
+
+
+
+

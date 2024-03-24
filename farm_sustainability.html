@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<title>Sustainability</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/header.css">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<script src="https://kit.fontawesome.com/21a73a2dcd.js" crossorigin="anonymous"></script>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        // Load google charts
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawChart2);
+        google.charts.setOnLoadCallback(drawChart3);
+        google.charts.setOnLoadCallback(drawChart4);
+        
+        // Draw the chart and set the chart values
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Status', 'Tons'],
+                ['Completed', 1],
+                ['Incomplete', 0],
+            ]);
+        
+            var options = {
+                'title': 'Crop Waste - Compost',
+                'colors': ['#d9f54b'],
+                'backgroundColor': '#ecf6de'
+            };
+        
+            var container = document.getElementById('piechart');
+            var containerwidth = container.offsetWidth;
+            var containerheight = container.offsetHeight;
+
+            var chart = new google.visualization.PieChart(container);
+            chart.draw(data, options);
+        }
+
+        function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+                ['Status', 'Tons'],
+                ['Completed', 0.19],
+                ['Incomplete', 0.5],
+            ]);
+        
+            var options = {
+                'title': 'Package Waste',
+                'colors': ['#5eb5e6', 'red'],
+                'backgroundColor': '#ecf6de'
+            };
+        
+            var container = document.getElementById('piechart2');
+            var containerwidth = container.offsetWidth;
+            var containerheight = container.offsetHeight;
+
+            var chart = new google.visualization.PieChart(container);
+            chart.draw(data, options);
+        }
+
+        function drawChart3() {
+            var data = google.visualization.arrayToDataTable([
+                ['Status', 'Tons'],
+                ['Completed', 2],
+                ['Incomplete', 0],
+            ]);
+        
+            var options = {
+                'title': 'Crop Waste - Rumination',
+                'colors': ['#f99696'],
+                'backgroundColor': '#ecf6de'
+            };
+        
+            var container = document.getElementById('piechart3');
+            var containerwidth = container.offsetWidth;
+            var containerheight = container.offsetHeight;
+
+            var chart = new google.visualization.PieChart(container);
+            chart.draw(data, options);
+        }
+
+        function drawChart4() {
+            var data = google.visualization.arrayToDataTable([
+                ['Status', 'Tons'],
+                ['Completed', 0.472],
+                ['Incomplete', 0.8],
+            ]);
+
+            var options = {
+                'title': 'Chemical Waste',
+                'colors': ['#dd6ae7', '#dec15c'],
+                'backgroundColor': '#ecf6de'
+            };
+        
+            var container = document.getElementById('piechart4');
+            var containerwidth = container.offsetWidth;
+            var containerheight = container.offsetHeight;
+
+            var chart = new google.visualization.PieChart(container);
+            chart.draw(data, options);
+        }
+        </script>
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="assets/logo.png" alt="logo"></a>
+        <div>
+          <ul class="navbar">
+            <div class="dropdown">
+              <button class="dropbtn">MyFarm
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="farmplanning-onboarding.html">Farm Planning</a>
+                <a href="index.html">Farm Manage</a>
+                <a href="farm_harvest.html">Farm Harvest</a>
+                <a href="farm_sustainability.html">Farm Sustainability</a>
+              </div>
+            </div>
+            <li> <a href="resources_land.html">Resources</a></li>
+            <!-- <div class="dropdown">
+                          <button class="dropbtn">Opportunity
+                              <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                              <a href="#">Subsidies</a>
+                          </div>
+                      </div> -->
+            <li> <a href="subsidy.html">Opportunities</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">Connect
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="event.html">Events</a>
+                <a href="community.html">Community</a>
+                <a href="mentorship.html">Mentorship</a>
+              </div>
+            </div>
+            <li> <a href="tools.html">Tools</a></li>
+            <li> <a href="knowledge_base.html">Knowledge</a></li>
+            <!-- <li><a href="page6.html"><i class="far fa-shopping-bag"></i></a></li>         -->
+          </ul>
+        </div>
+        <a class="cta" href="#"><button>Profile</button></a>
+      </section>
+    <div class="sustain-container">
+        <br/><br/><br/><br/><br/>
+        <h1>Sustainability</h1>
+        <div class="sustain-mini-container">
+            <br/>
+            <h2 class="sustain-h2">Explore events that offer a variety of experiences and knowledge.</h2>
+            <div class="sustain-content">
+              <div class="sustain-element" onclick="window.location.href = '#'">Get Advice</div>
+              <div class="sustain-element" onclick="window.location.href = '#'">My Rewards</div>
+              <div class="sustain-element2" onclick="window.location.href = '#'">6 Environmental Coins</div>
+            </div>
+        </div>
+        <hr/>
+        <br/>
+        <h1 style="font-weight:400; font-size: 28px;">My Goals</h1>
+        <div class="sustain-mini-container">
+            <br/>
+            <h2 class="sustain-h2" style="font-size: 15px;">Please attach valid proof when adding to your goals.</h2>
+            <div class="sustain-content">
+              <div class="sustain-element" onclick="window.location.href = '#'">+ Set My Goals</div>
+            </div>
+        </div>
+        <hr/>
+        <div class="chart-ultra-container">
+            <div class="chart-container">
+                <div id="piechart"></div>
+                <br/>
+                <h2 style="margin-left: 15px;font-weight:bolder; font-size: 18px;">Crop Waste - Compost</h2>
+                <p style="margin-left: 15px;">1.00 out of 1.00 ton</p>
+                <br/><br/>
+                <a class="chart-button1">Edit</a>
+                <a class="chart-button2">Add +</a>
+            </div>
+            <div class="chart-container">
+                <div id="piechart2"></div>
+                <br/>
+                <h2 style="margin-left: 15px;font-weight:bolder; font-size: 18px;">Packaging Waste</h2>
+                <p style="margin-left: 15px;">190 out of 500kg </p>
+                <br/><br/>
+                <a class="chart-button1">Edit</a>
+                <a class="chart-button2">Add +</a>
+            </div>
+            <div class="chart-container">
+                <div id="piechart3"></div>
+                <br/>
+                <h2 style="margin-left: 15px;font-weight:bolder; font-size: 18px;">Crop Waste - Rumination</h2>
+                <p style="margin-left: 15px;">2.00 out of 2.00 tons</p>
+                <br/><br/>
+                <a class="chart-button1">Edit</a>
+                <a class="chart-button2">Add +</a>
+            </div>
+            <div class="chart-container">
+                <div id="piechart4"></div>
+                <br/>
+                <h2 style="margin-left: 15px;font-weight:bolder; font-size: 18px;">Chemical Waste</h2>
+                <p style="margin-left: 15px;">472 out of 800 kg</p>
+                <br/><br/>
+                <a class="chart-button1">Edit</a>
+                <a class="chart-button2">Add +</a>
+            </div>
+        </div>
+        <br/>
+        <div class="button-align">
+            <a class="sustain-button">&#8646; Exchange</a>
+        </div>
+        <br/>
+        <div class="sustain-incontainer">
+            <div class="exchange-container">
+                <div class="exchange-container2">
+                    <h1 style="font-weight: 380; margin-left: 10px; margin-top: 10px; color:white;">Exchange Rate</h1>
+                    <p style="font-weight: 300; font-size:12px; margin-left: 10px; margin-top: 10px; color:white;">&#40;Calculated according to market rates&#41;</p>
+                    <br/>
+                    <div class="exchange-minicontainer">
+                        Crop Waste - Rumination (per ton):<br/>
+                        218.00MYR
+                    </div>
+                    <div class="exchange-minicontainer">
+                        Packaging Waste (per ton):<br/>
+                        100.25MYR
+                    </div>
+                    <div class="exchange-minicontainer">
+                        Crop Waste - Compost (per ton):<br/>
+                        183.75MYR
+                    </div>
+                    <div class="exchange-minicontainer">
+                        Chemical Waste (per ton):<br/>
+                        336.04MYR
+                    </div>
+                    <div class="exchange-minicontainer">
+                        Hazardous Waste (per ton):<br/>
+                        368.53MYR
+                    </div>
+                </div>
+            </div>
+            <div class="sustain-mission-container">
+                <h1 style="font-weight: 400; margin-left: 10px; margin-top: 10px;">Missions</h1>
+                <hr/>
+                <br/>
+                <div class="mission-minicontainer">
+                    <div class="mission-minicontainer-container1">
+                        Collect and properly dispose of plastic waste from their farms, including empty pesticide containers, mulch cilms, 
+                        and other plastic materials.
+                        <br/><br/><br/>
+                        <div class="mission-progress">
+                            <div class="mission-completed" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="mission-minicontainer-container2">
+                        <img alt="wheat" src="assets/wheats.jpg" class="mission-pictures">
+                    </div>
+                </div>
+                <div class="mission-minicontainer">
+                    <div class="mission-minicontainer-container1">
+                        Gather organic waste such as crop residue, spoiled produce, and animal bedding materials.
+                        <br/><br/><br/>
+                        <div class="mission-progress">
+                            <div class="mission-completed" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="mission-minicontainer-container2">
+                        <img alt="wheat" src="assets/wheats.jpg" class="mission-pictures">
+                    </div>
+                </div>
+                <div class="mission-minicontainer">
+                    <div class="mission-minicontainer-container1">
+                        Collect used tires from their farm vehicles and equipment. Collected tires can be recycled into various products 
+                        and repurposed.
+                        <br/><br/><br/>
+                        <div class="mission-progress">
+                            <div class="mission-completed" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="mission-minicontainer-container2">
+                        <img alt="wheat" src="assets/wheats.jpg" class="mission-pictures">
+                    </div>
+                </div>
+                <div class="mission-minicontainer">
+                    <div class="mission-minicontainer-container1">
+                        Participate in waterway cleanup efforts by collecting debris and waste from streams, rivers, and drainage ditches 
+                        on or near their farms.
+                        <br/><br/><br/>
+                        <div class="mission-progress">
+                            <div class="mission-completed" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="mission-minicontainer-container2">
+                        <img alt="wheat" src="assets/wheats.jpg" class="mission-pictures">
+                    </div>
+                </div>
+                <div class="mission-minicontainer">
+                    <div class="mission-minicontainer-container1">
+                        Gather packaging materials such as cardboard boxes, plastic wrap, and metal cans from farm operations.
+                        <br/><br/><br/>
+                        <div class="mission-ultraminicontainer">
+                            <div class="mission-completed2" style="width: 60%;"></div>
+                            <div class="mission-collect">
+                                <button class="mission-collect-button" href="#">
+                                    Claim 2 Points
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-minicontainer-container2">
+                        <img alt="wheat" src="assets/wheats.jpg" class="mission-pictures">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br/>
+</body>
+</html>
