@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="chatgpt.css">
+</head>
+
+<body>
+    <div class="top-border">
+        <a href = "resources_land.html"><span class ="material-symbols-outlined">
+            cancel
+        </span></a>
+    </div>
+    <div class="chat-container">
+        <div class="chat outgoing">
+            <div class="chat-content">
+                <div class="chat-details">
+                    <img src="assets/chatgpt/user.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, blanditiis veritatis hic iste qui
+                        animi.</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat incoming">
+            <div class="chat-content">
+                <div class="chat-details">
+                    <img src="assets/chatgpt/chatbot.jpg">
+                    <div class="typing-animation">
+                        <div class="typing-dot" style="--delay: 0.2s">
+
+                        </div>
+                        <div class="typing-dot" style="--delay: 0.3s">
+
+                        </div>
+                        <div class="typing-dot" style="--delay: 0.4s">
+
+                        </div>
+                    </div>
+                </div>
+                <span class="material-symbols-outlined">
+                    content_copy
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!--Tying Container-->
+    <div class="div typing-container">
+        <div class="div typing-content">
+            <div class="div typing-textarea">
+                <textarea id="chat-input"
+                    placeholder="Enter Your Requirements Here " required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+            <div class="div typing-controls">
+                <span id="theme-btn" class="material-symbols-outlined">light_mode</span>
+                <span id="delete-btn" class="material-symbols-outlined">delete</span>
+            </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
